@@ -1,0 +1,300 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+body, html{
+  height:100%;
+  margin:0;
+  width:100%;
+}
+.left{
+  position: absolute;
+  top:50%;
+  left:4%;
+}
+.left:hover , .right:hover{
+  width:55px;
+  height:55px;
+  transition-duration: 0.2s;
+
+}
+.left:hover{
+  transform: translateX(-10px);
+}
+.right:hover{
+  transform: translateX(10px);
+}
+.right{
+  position: absolute;
+  top:50%;
+  right:4%;
+}
+
+.audio{
+  position: relative;
+  background-color: #fff;
+  height:454px;
+  width:350px;
+  margin: -3% auto;
+  border-radius: 7px;
+
+
+}
+.audio span{
+  display:block;
+  position:absolute;
+  bottom: 0;
+  left:20px;
+  height:20px;
+  width:5px;
+  background:#ff5722;
+  animation: load 0.8s infinite ease-in-out;
+  border-radius: 5px 5px 0 0 ;
+
+
+}
+
+span:nth-of-type(2)
+{
+  left:30px;
+  animation-delay: 0.2s;
+}
+span:nth-of-type(3)
+{
+  left:40px;
+  animation-delay: 0.4s;
+}
+span:nth-of-type(4)
+{
+  left:50px;
+  animation-delay: 0.6s;
+}
+span:nth-of-type(5)
+{
+  left:60px;
+  animation-delay: 0.8s;
+}
+span:nth-of-type(6)
+{
+  left:70px;
+  animation-delay: 1s;
+}
+span:nth-of-type(7)
+{
+  left:80px;
+  animation-delay: 0.15s;
+}
+span:nth-of-type(8)
+{
+  left:90px;
+  animation-delay: 0.4s;
+}
+span:nth-of-type(9)
+{
+  left:100px;
+  animation-delay: 0.6s;
+}
+span:last-of-type
+{
+  left:110px;
+  animation-delay: 1.8s;
+}
+
+@keyframes load {
+  0%,25%,100%{
+    height:20px;
+    background: #ff5722;
+    transform:translateY(0);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  50%{
+    height:35px;
+    background: #ff9800;
+    transform:translateY(15);
+    box-shadow: 5px 0 3px rgba(0, 0, 0, 0.3);
+
+  }
+
+
+}
+.imggg{
+  position: absolute;
+  border-top-left-radius: 7px;
+  border-top-right-radius:7px;
+
+}
+.conts{
+  background-color: #fff;
+  position:absolute;
+  bottom:11%;
+}
+
+.musicc{
+  position: absolute;
+  right:10px;
+  bottom: 0;
+  animation: musicd 8s infinite linear;
+}
+
+@keyframes musicd {
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(359deg);
+  }
+
+}
+.notes{
+ position: absolute;
+ height: 250px;
+ bottom:0;
+ left:10%;
+
+}
+@media screen and (max-width:1061px) {
+  .notes{
+    position: absolute;
+    height: 250px;
+    left:0;
+    top:15%;
+  }
+  .notesimg{
+    position: absolute;
+    left:0;
+    height:150px;
+    width:180px;
+  }
+
+}
+.notesimg{
+position: relative;
+left:0;
+bottom: 0;
+}
+
+.musical{
+  position: absolute;
+  left:48%;
+  top:10%;
+  animation: music 2s infinite linear;
+
+
+}
+@keyframes music {
+  0%{
+    transform: translateY(-1px);
+
+  }
+  7%{
+    transform: translateX(5px);
+
+  }
+  20%{
+
+  transform: translateX(20px);
+  transform: translateY(-10px);
+  }
+  40%{
+    transform: translateX(30px);
+    transform: translateY(-20px);
+  }
+  60%{
+    transform: translateX(40px);
+    transform: translateY(-30px);
+  }
+
+  80%{
+    transform: translateX(40px);
+    transform: translateY(-40px);
+
+  }
+
+  100%{
+    transform: translateY(-50px);
+
+
+  }
+
+}
+.musicall{
+  position: absolute;
+  left:50%;
+  top:18%;
+  animation: musicl 2s infinite linear;
+  animation-delay: 0.2s;
+}
+@keyframes musicl {
+  0%{
+    transform: translateY(-1px);
+
+  }
+  7%{
+    transform: translateX(5px);
+
+  }
+  20%{
+
+  transform: translateX(20px);
+  transform: translateY(-10px);
+  }
+  80%{
+    transform: translateX(40px);
+    transform: translateY(-40px);
+
+  }
+  100%{
+    transform: translateY(-50px);
+
+  }
+
+}
+.star{
+  position:absolute;
+  bottom: 15%;
+  left:75%;
+  animation: star 2s infinite linear;
+}
+@media screen and (max-width:1110px){
+
+}
+@media screen and (max-width:730px){
+  .star{
+    position:absolute;
+    height:80px;
+    width:80px;
+    top: 2%;
+    left:75%;
+    animation: star 2s infinite linear;
+  }
+}
+@keyframes star {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+
+
+}
+.bg{
+ background-image: url(bg.jpg);
+/* background-image: linear-gradient(to right, blue , green);*/
+ /*background-image: linear-gradient(to right, rgba(1, 26, 66,1), rgba(4, 89, 224,1));*/
+  height:100%;
+  width:100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
